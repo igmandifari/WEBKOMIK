@@ -1,2 +1,2 @@
-# uas-web1-webkomik
+# WEBKOMIK
 UAS Pemrograman Web I
