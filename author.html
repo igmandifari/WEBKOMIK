@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AUTHOR - WEB KOMIK</title>
+        <link href="image/topicon.png" rel="icon" sizes="192x192"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="icon" type="image/png" sizes="32x32" href="image/topicon.png">
+	    <link rel="icon" type="image/png" sizes="16x16" href="image/topicon.png">
+        <link rel="stylesheet" href="css/style2.css" type="text/css"/>
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script src="jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){   
+                var i=0;
+                $("#simpan").click(function(){
+                    var npm=$("#npm").val();
+                    var nama=$("#nama").val();
+                    var alamat=$("#alamat").val();
+                    var email=$("#email").val(); 
+                    i++;
+                    $("#hasil").append("<tr><td>"+i+"</td><td>"+npm+"</td><td>"+nama+"</td><td>"+alamat+"</td><td>"+email+"</td><tr>")
+                    });
+                    $("#kosongkan").click(function(){
+                        i=0;
+                    $("#hasil").html("");
+                    $("#hasil").append(
+                    "<tr><th>No</th><th>NPM</th><th>Nama</th><th>Alamat</th><th>Alamat</th><th>Email</th></tr>");
+                });
+            });
+        </script>
+    </head>
+    <body>        
+            <div id="outer-wrapper">
+            <div id="header">
+                <nav class="menu-top">
+                        <ul class="logo" class="aktip">
+                                <a href="index.html"><img src="image/topicon.png" width="100px" height="100px"/></a>  
+                            </ul>
+                    <ul class="menu-left" id="uye">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="genre.html">Genre</a.</li>
+                        <li><a href="populer.html">Populer</a.</li>
+                        <li><a href="terbitkan.html">Terbitkan</a.</li>
+                        <li><a href="tentang.html">Tentang</a></li>
+                        <li><a href="author.html">Author</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+
+                        <li><a class="tugel" href="javascript:void(0)" onclick="oey()">Menu</a></li>
+                       
+                    </ul>
+
+                    <div class="search">
+                        <form>
+                            <input type="text" name="search" placeholder="Cari Komik">
+                        </form>
+                    </div>  
+                </nav>
+<!--                 
+                <div class="topnav" id="myTopnav">
+                        <a href="index.html" class="active">index</a>
+                        <a href="genre.html">Genre</a>
+                        <a href="populer.html">Populer</a>
+                        <a href="ktp.html">Form KTP</a>
+                        <a href="video.html">Video</a>
+                        <a href="audio.html">Audio</a>
+                        <a href="calc.html">Calc</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">Menu</a>
+                </div> -->
+
+               
+
+                
+                <div class="judul">
+                </div>
+
+
+                <div class="tentang">
+                    DAFTAR SEBAGAI AUTHOR<br><br>
+                </div>
+                <div class="mentok"></div>
+                        <table width="600px" align="center">
+                                <tr>
+                                    <td>NIK</td>
+                                    <td>: <input type="text" id="npm" placeholder="NIK"></td>
+                                </tr>
+                                <tr>
+                                        <td>Nama</td>
+                                        <td>: <input type="text" id="nama" placeholder="Nama"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alamat</td>
+                                        <td>: <input type="text" id="alamat" placeholder="alamat"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email</td>
+                                        <td>: <input type="text" id="email" placeholder="email"></td>
+                                    </tr>
+                                            <td>Unggah Foto</td>
+                                            <td>: <input type="file" id="unggah" placeholder="Kewarganegaraan"></td>
+                                        </tr>
+                                    <td></td>
+                                    <td>
+                                        <button id="simpan">Simpan</button>
+                                        <button id="kosongkan">Kosongkan</button>
+                                    </td>
+                            </table>
+                            <table id="hasil" align="center" border="1px" cellpadding="0px" cellspacing="0px" width="600px">
+                                <tr>
+                                    <th>No</th>
+                                    <th>NIK</th>
+                                    <th>Nama</th>
+                                    <th>Alamat</th>
+                                    <th>Email</th>
+                                    
+                                </tr>
+                            </table><br><br><br><br><br><br>
+                </div>
+            
+
+                <div class="tentang">
+                        <a href="author2.html">Lihat Daftar Author</a>
+                 </div>
+
+                        <div class="challenge">
+                            <div class="tulischall">
+                                WEB KOMIK<br>KONTES<br>
+                            </div>
+                            <div class="tulischall2">
+                                Sekarang Web Komik buatanmu dapat<br>
+                                diterbitkan di Webkomik Kontes!<br>
+                                <br>Webkomik Kontes terbuka bagi<br>
+                                yang ingin menerbitkan Web Komik sendiri!<br><br>
+                            </div>
+                            <div class="lihat">
+                                <a href="terbitkan.html">
+                                    <button class="buttonlihat" id="lihat">Lihat >></button>
+                                </a>
+                            </div>
+                        </div> 
+                        <div class="challenge2">
+                            <div class="iklanchall">
+                                <a href="komik.html" ><img src="image/kontes1.png" width="100%"/></a> 
+                                <div class="penjelaskontes">
+                                        <div class="tulisan"><a href="komik.html">Hello World</a></div>
+                                </div>  
+                            </div>
+                            <div class="iklanchall">
+                                    <a href="komik.html" ><img src="image/kontes2.png" width="100%"/></a> 
+                                    <div class="penjelaskontes">
+                                            <div class="tulisan"><a href="komik.html">Hello World</a></div>
+                                </div>  
+                            </div>
+                            <div class="iklanchall">
+                                    <a href="komik.html" ><img src="image/kontes3.png" width="100%"/></a> 
+                                    <div class="penjelaskontes">
+                                            <div class="tulisan"><a href="komik.html">Hello World</a></div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="judul">
+                            
+                        </div>     
+                        <div id="footer">                   
+                        <div class="sosmed">
+                                <a href="https://www.facebook.com/difariivman" target="_blank"><img src="image/facebook.png"title="Facebook" alt="Facebook" width="30px" height="30px"/></a> 
+                                <a href="https://www.youtube.com/user/difariivman" target="_blank"><img src="image/youtube.png"title="youtube" alt="youtube" width="30px" height="30px"/></a>
+                                <a href="https://line.me/R/ti/p/%40webtoonid" target="_blank"><img src="image/line.png"title="linkedin" alt="linkedin" width="30px" height="30px"/></a>
+                                <a href="https://www.instagram.com/igmandifa" target="_blank"><img src="image/instagram.png"title="instagram" alt="instagram" width="30px" height="30px"/></a>
+                         </div> </div>
+                      <ul class="menu-tgh">
+                            <li><a href="#about">Saran dan Pendapat</a></li>
+                            <li><a href="#about">Bantuan</a.</li>
+                            <li><a href="#about">Syarat Penggunaan</a.</li>
+                            <li><a href="#about">Privasi</a></li>
+                        </ul>   
+                       
+                        <div class="footer">
+                                <div class="footer" id="myTopnav">
+                                        <a>Copyright Igman Difari</a>
+               
+                                         </div>
+                
+                        </div>    
+            <script>
+            function myFunction(){
+            var x=document.getElementById("myTopnav");
+            if(x.className==="topnav"){
+            x.className +=" responsive";
+
+            }else {
+            x.className="topnav";
+            }
+            }
+
+            </script>
+            <script>
+            function oey(){
+            var n=document.getElementById("uye");
+            if(n.className==="menu-left"){
+            n.className +=" responsif";
+            }else{
+            n.className="menu-left";
+            }
+            }
+            </script>
+            </body>    
+
+    </html>
